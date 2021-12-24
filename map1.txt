@@ -1,0 +1,4 @@
+|LeaveCaveRoom|StartingRoom|
+|EmptyCavePath|GiantSpiderRoom|
+|EmptyCavePath|JokerRoom|
+|GiantSpiderRoom|EmptyCavePath|

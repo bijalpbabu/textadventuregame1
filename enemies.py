@@ -28,11 +28,15 @@ class Wolf(Enemy):
         super().__init__(name="Wolf", hp=25, damage=15)
 
 
-class Zombie(Enemy):
-    def __init__(self):
-        super().__init__(name="Zombie", hp=28, damage=18)
-
-
 class Goblin(Enemy):
     def __init__(self):
-        super().__init__(name="Goblin", hp=23, damage=17)
+        super().__init__(name="Goblin", hp=28, damage=18)
+
+
+class Joker(Enemy):
+    def __init__(self):
+        super().__init__(name="Joker", hp=23, damage=17)
+
+class Bane(Enemy):
+    def __init__(self):
+        super().__init__(name="Bane", hp=23, damage=17)        

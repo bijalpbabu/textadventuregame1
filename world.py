@@ -1,9 +1,22 @@
 _world = {}
 starting_position = (0, 0)
  
-def load_tiles():
+def load_tiles(level):
+
+    if(level == 1):
+        mapTxt = "map1.txt"
+        title = "Batman Meets Joker"
+    if(level == 2):
+        title = "Batman Meets Bane"
+        mapTxt = "map2.txt"
+    if(level == 3):
+        title = "Batman Meets Superman"
+        mapTxt = "map3.txt"  
+
+    print("============ > Level ", level, " ", title)    
+
     """Parses a file that describes the world space into the _world object"""
-    with open('map.txt', 'r') as f:
+    with open(mapTxt, 'r') as f:
         rows = f.readlines()
     x_max = len(rows[0].split('|')) # Assumes all rows contain the same number of tabs
     for y in range(len(rows)):

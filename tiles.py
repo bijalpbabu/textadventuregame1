@@ -43,17 +43,6 @@ class StartingRoom(MapTile):
         #Room has no action on player
         pass
 
-class LootRoom(MapTile):
-    def __init__(self, x, y, item):
-        self.item = item
-        super().__init__(x, y)
- 
-    def add_loot(self, player):
-        player.inventory.append(self.item)
- 
-    def modify_player(self, player):
-        self.add_loot(player)
-
 class EnemyRoom(MapTile):
     def __init__(self, x, y, enemy):
         self.enemy = enemy
@@ -110,16 +99,30 @@ class WolfRoom(EnemyRoom):
              """
 
 
-class FindDaggerRoom(LootRoom):
+class JokerRoom(EnemyRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Dagger())
+        super().__init__(x, y, enemies.Joker())
  
     def intro_text(self):
         return """
-        Your notice something shiny in the corner.
-        It's a dagger! You pick it up.
+        Joker
         """
-
+class BaneRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.Bane())
+ 
+    def intro_text(self):
+        return """
+        Bane
+        """
+class GoblinRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.Goblin())
+ 
+    def intro_text(self):
+        return """
+        Goblin
+        """       
 class LeaveCaveRoom(MapTile):
     def intro_text(self):
         return """

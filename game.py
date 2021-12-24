@@ -1,8 +1,10 @@
 import world
 from player import Player
+from playsound import playsound
 
-def play():
-    world.load_tiles()
+def play(level):
+    playsound("alexander-nakarada-chase.mp3", False)
+    world.load_tiles(level)
     player = Player()
     #These lines load the starting room and display the text
     room = world.tile_exists(player.location_x, player.location_y)
@@ -24,4 +26,6 @@ def play():
 
 
 if __name__ == "__main__":
-    play()
+   
+    for i in range(1, 4):
+        play(i)

@@ -1,5 +1,4 @@
-			LeaveCaveRoom	
-		EmptyCavePath	GiantSpiderRoom	
-		EmptyCavePath		
-		WolfRoom		
-GiantSpiderRoom	EmptyCavePath	StartingRoom	EmptyCavePath	FindDaggerRoom
+|LeaveCaveRoom|StartingRoom|
+|EmptyCavePath|GiantSpiderRoom|
+|EmptyCavePath|BaneRoom|
+|GiantSpiderRoom|EmptyCavePath|
