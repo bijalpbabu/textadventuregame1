@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 |LeaveCaveRoom|StartingRoom|
 |EmptyCavePath|GiantSpiderRoom|
 |EmptyCavePath|BaneRoom|
 |GiantSpiderRoom|EmptyCavePath|
-=======
-			LeaveCaveRoom	
-		EmptyCavePath	GiantSpiderRoom	
-		EmptyCavePath		
-		WolfRoom		
-GiantSpiderRoom	EmptyCavePath	StartingRoom	EmptyCavePath	FindDaggerRoom
->>>>>>> 8c0ad34e889b985242d9c0a6d526dc1391418331
