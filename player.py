@@ -1,4 +1,4 @@
-﻿import random 
+import random 
 import items, world
  
 class Player():

@@ -1,4 +1,4 @@
-﻿# Base class for all items
+# Base class for all items
 class Item():
     # __init__ is the contructor method
     def __init__(self, name, description, value):
